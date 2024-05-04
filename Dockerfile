@@ -11,7 +11,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy the static contents of your site to the new Nginx web directory
-COPY ./your-site-directory /var/www/html
+COPY ./var/lib/jenkins/workspace/pipeline-1/ /var/www/html
 
 # Expose port 80 to the outside once the container has launched
 EXPOSE 80
